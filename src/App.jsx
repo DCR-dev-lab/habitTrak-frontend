@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import { Toaster } from "react-hot-toast";
 
 import Login from './pages/Login.jsx'
 import Signup from './pages/Signup.jsx'
@@ -16,70 +17,72 @@ import ProtectedRoute from './components/ProtectedRoute.jsx'
 
 const App = () => {
   return (
-    <Routes>
-      <Route path='/login' element={<Login />} />
-      <Route path='/signup' element={<Signup />} />
-      <Route path='/dashboard' element={
-        <ProtectedRoute>
-          <Dashboard />
-        </ProtectedRoute>
-      } />
-
-      <Route
-        path="/create-habit"
-        element={
+    <>
+      <Toaster position="top-right" reverseOrder={false} />
+      <Routes>
+        <Route path='/login' element={<Login />} />
+        <Route path='/signup' element={<Signup />} />
+        <Route path='/' element={
           <ProtectedRoute>
-            <CreateHabit />
+            <Dashboard />
           </ProtectedRoute>
-        }
-      />
-      <Route
-        path="/habit/:id"
-        element={
-          <ProtectedRoute>
-            <HabitDetails />
-          </ProtectedRoute>
-        }
-      />
+        } />
 
-      <Route
-        path="/challenges"
-        element={
-          <ProtectedRoute>
-            <Challenges />
-          </ProtectedRoute>
-        }
-      />
+        <Route
+          path="/create-habit"
+          element={
+            <ProtectedRoute>
+              <CreateHabit />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/habit/:id"
+          element={
+            <ProtectedRoute>
+              <HabitDetails />
+            </ProtectedRoute>
+          }
+        />
 
-      <Route
-        path="/profile"
-        element={
-          <ProtectedRoute>
-            <Profile />
-          </ProtectedRoute>
-        }
-      />
-      <Route
-        path="/challenge/create"
-        element={
-          <ProtectedRoute>
-            <ChallengeCreate />
-          </ProtectedRoute>
-        }
-      />
+        <Route
+          path="/challenges"
+          element={
+            <ProtectedRoute>
+              <Challenges />
+            </ProtectedRoute>
+          }
+        />
 
-      <Route
-        path="/challenge/:id"
-        element={
-          <ProtectedRoute>
-            <ChallengeLeaderboard />
-          </ProtectedRoute>
-        }
-      />
-      <Route path="*" element={<NotFound />} />
+        <Route
+          path="/profile"
+          element={
+            <ProtectedRoute>
+              <Profile />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/challenge/create"
+          element={
+            <ProtectedRoute>
+              <ChallengeCreate />
+            </ProtectedRoute>
+          }
+        />
 
-    </Routes>
+        <Route
+          path="/challenge/:id"
+          element={
+            <ProtectedRoute>
+              <ChallengeLeaderboard />
+            </ProtectedRoute>
+          }
+        />
+        <Route path="*" element={<NotFound />} />
 
+      </Routes>
+    </>
 
   )
 }
