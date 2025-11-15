@@ -9,6 +9,7 @@ import Profile from './pages/Profile.jsx'
 import Challenges from "./pages/Challenges";
 import ChallengeCreate from "./pages/ChallengeCreate";
 import ChallengeLeaderboard from "./pages/ChallengeLeaderboard";
+import NotFound from './pages/NotFound.jsx'
 
 
 import ProtectedRoute from './components/ProtectedRoute.jsx'
@@ -75,6 +76,7 @@ const App = () => {
           </ProtectedRoute>
         }
       />
+      <Route path="*" element={<NotFound />} />
 
     </Routes>
 
