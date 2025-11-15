@@ -137,7 +137,7 @@ export default function Dashboard() {
                 {/* Welcome Header */}
                 <div className="mb-8">
                     <h1 className="text-4xl font-bold text-gray-900 mb-2">
-                        Welcome Back! 👋
+                        Welcome! 👋
                     </h1>
                     <p className="text-gray-600">Here's your habit journey overview</p>
                 </div>
@@ -203,7 +203,7 @@ export default function Dashboard() {
                             </div>
                             <button
                                 onClick={() => navigate("/challenges")}
-                                className="text-sm text-indigo-600 hover:text-indigo-700 font-semibold"
+                                className="cursor-pointer text-sm text-indigo-600 hover:text-indigo-700 font-semibold"
                             >
                                 View All
                             </button>
@@ -213,7 +213,7 @@ export default function Dashboard() {
                                 <button
                                     key={c._id}
                                     onClick={() => navigate(`/challenge/${c._id}`)}
-                                    className="backdrop-blur-xl bg-indigo-500/10 hover:bg-indigo-500/20 border border-indigo-500/20 px-4 py-2 rounded-xl text-indigo-700 font-medium transition-all duration-200 hover:scale-[1.02]"
+                                    className="cursor-pointer backdrop-blur-xl bg-indigo-500/10 hover:bg-indigo-500/20 border border-indigo-500/20 px-4 py-2 rounded-xl text-indigo-700 font-medium transition-all duration-200 hover:scale-[1.02]"
                                 >
                                     🏆 {c.title}
                                 </button>
@@ -274,7 +274,7 @@ export default function Dashboard() {
                     <h2 className="text-2xl font-bold text-gray-900">Your Habits</h2>
                     <button
                         onClick={() => navigate("/create-habit")}
-                        className="flex items-center gap-2 backdrop-blur-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-4 py-2 rounded-xl transition-all duration-200 hover:scale-[1.02] shadow-lg shadow-indigo-500/30"
+                        className="cursor-pointer flex items-center gap-2 backdrop-blur-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-4 py-2 rounded-xl transition-all duration-200 hover:scale-[1.02] shadow-lg shadow-indigo-500/30"
                     >
                         <Plus className="w-4 h-4" />
                         Add Habit

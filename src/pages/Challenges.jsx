@@ -137,7 +137,7 @@ export default function Challenges() {
 
                     <button
                         onClick={() => navigate("/challenge/create")}
-                        className="flex items-center justify-center gap-2 backdrop-blur-xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200 hover:scale-[1.02] shadow-lg shadow-indigo-500/30 whitespace-nowrap"
+                        className="cursor-pointer flex items-center justify-center gap-2 backdrop-blur-xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200 hover:scale-[1.02] shadow-lg shadow-indigo-500/30 whitespace-nowrap"
                     >
                         <Plus className="w-5 h-5" />
                         Create Challenge
@@ -222,7 +222,7 @@ export default function Challenges() {
                                 <div className="flex gap-2">
                                     <button
                                         onClick={() => navigate(`/challenge/${challenge.id}`)}
-                                        className="flex-1 flex items-center justify-center gap-2 backdrop-blur-xl bg-indigo-500/10 hover:bg-indigo-500/20 border border-indigo-500/20 text-indigo-700 font-semibold py-3 rounded-xl transition-all duration-200 hover:scale-[1.02]"
+                                        className="cursor-pointer flex-1 flex items-center justify-center gap-2 backdrop-blur-xl bg-indigo-500/10 hover:bg-indigo-500/20 border border-indigo-500/20 text-indigo-700 font-semibold py-3 rounded-xl transition-all duration-200 hover:scale-[1.02]"
                                     >
                                         <Eye className="w-4 h-4" />
                                         View Details
@@ -231,7 +231,7 @@ export default function Challenges() {
                                     <button
                                         onClick={() => handleJoin(challenge.id)}
                                         disabled={joiningIds.includes(challenge.id)}
-                                        className="flex-1 flex items-center justify-center gap-2 backdrop-blur-xl bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 disabled:from-gray-400 disabled:to-gray-500 text-white font-semibold py-3 rounded-xl transition-all duration-200 hover:scale-[1.02] shadow-lg shadow-green-500/20 disabled:cursor-not-allowed"
+                                        className="cursor-pointer  flex-1 flex items-center justify-center gap-2 backdrop-blur-xl bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 disabled:from-gray-400 disabled:to-gray-500 text-white font-semibold py-3 rounded-xl transition-all duration-200 hover:scale-[1.02] shadow-lg shadow-green-500/20 disabled:cursor-not-allowed"
                                     >
                                         {joiningIds.includes(challenge.id) ? (
                                             <>

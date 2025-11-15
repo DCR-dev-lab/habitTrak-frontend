@@ -96,7 +96,7 @@ export default function ChallengeCreate() {
                 {/* Back Button */}
                 <button
                     onClick={() => navigate("/challenges")}
-                    className="flex items-center gap-2 text-gray-600 hover:text-indigo-600 mb-6 transition-colors"
+                    className="cursor-pointer flex items-center gap-2 text-gray-600 hover:text-indigo-600 mb-6 transition-colors"
                 >
                     <ArrowLeft className="w-5 h-5" />
                     <span className="font-medium">Back to Challenges</span>
@@ -189,7 +189,7 @@ export default function ChallengeCreate() {
                                 <button
                                     onClick={handleCreate}
                                     disabled={isCreating || !form.title}
-                                    className="w-full flex items-center justify-center gap-2 backdrop-blur-xl bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 disabled:from-gray-400 disabled:to-gray-500 text-white font-semibold py-4 rounded-2xl transition-all duration-200 hover:scale-[1.02] shadow-xl shadow-yellow-500/30 hover:shadow-2xl hover:shadow-yellow-500/40 disabled:cursor-not-allowed"
+                                    className="cursor-pointer w-full flex items-center justify-center gap-2 backdrop-blur-xl bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 disabled:from-gray-400 disabled:to-gray-500 text-white font-semibold py-4 rounded-2xl transition-all duration-200 hover:scale-[1.02] shadow-xl shadow-yellow-500/30 hover:shadow-2xl hover:shadow-yellow-500/40 disabled:cursor-not-allowed"
                                 >
                                     {isCreating ? (
                                         <>

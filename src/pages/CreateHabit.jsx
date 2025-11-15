@@ -90,7 +90,7 @@ export default function CreateHabit() {
                 {/* Back Button */}
                 <button
                     onClick={() => navigate("/")}
-                    className="flex items-center gap-2 text-gray-600 hover:text-indigo-600 mb-6 transition-colors"
+                    className="cursor-pointer flex items-center gap-2 text-gray-600 hover:text-indigo-600 mb-6 transition-colors"
                 >
                     <ArrowLeft className="w-5 h-5" />
                     <span className="font-medium">Back to Dashboard</span>
@@ -151,7 +151,7 @@ export default function CreateHabit() {
                                         key={freq}
                                         type="button"
                                         onClick={() => setForm({ ...form, frequency: freq })}
-                                        className={`py-3 rounded-xl font-semibold transition-all duration-200 ${form.frequency === freq
+                                        className={`py-3 rounded-xl font-semibold transition-all duration-200 cursor-pointer  ${form.frequency === freq
                                             ? "backdrop-blur-xl bg-gradient-to-r from-indigo-500 to-purple-600 text-white shadow-lg shadow-indigo-500/30"
                                             : "backdrop-blur-xl bg-white/40 border border-gray-200 text-gray-700 hover:border-indigo-300"
                                             }`}
@@ -176,7 +176,7 @@ export default function CreateHabit() {
                                         key={cat.name}
                                         type="button"
                                         onClick={() => setForm({ ...form, category: cat.name.toLowerCase() })}
-                                        className={`py-2 px-3 rounded-xl text-sm font-medium transition-all duration-200 ${form.category === cat.name.toLowerCase()
+                                        className={`cursor-pointer py-2 px-3 rounded-xl text-sm font-medium transition-all duration-200 ${form.category === cat.name.toLowerCase()
                                             ? "backdrop-blur-xl bg-indigo-500/20 border-2 border-indigo-500 text-indigo-700"
                                             : "backdrop-blur-xl bg-white/40 border border-gray-200 text-gray-700 hover:border-indigo-300"
                                             }`}
@@ -215,7 +215,7 @@ export default function CreateHabit() {
                                         key={priority}
                                         type="button"
                                         onClick={() => setForm({ ...form, priority })}
-                                        className={`py-3 rounded-xl font-semibold transition-all duration-200 ${form.priority === priority
+                                        className={`cursor-pointer py-3 rounded-xl font-semibold transition-all duration-200 ${form.priority === priority
                                             ? priority === "high"
                                                 ? "backdrop-blur-xl bg-gradient-to-r from-red-500 to-pink-500 text-white shadow-lg shadow-red-500/30"
                                                 : priority === "medium"
@@ -233,7 +233,7 @@ export default function CreateHabit() {
                         {/* Submit Button */}
                         <button
                             onClick={handleSubmit}
-                            className="w-full flex items-center justify-center gap-2 backdrop-blur-xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold py-4 rounded-2xl transition-all duration-200 hover:scale-[1.02] shadow-xl shadow-indigo-500/30 hover:shadow-2xl hover:shadow-indigo-500/40"
+                            className="cursor-pointer w-full flex items-center justify-center gap-2 backdrop-blur-xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold py-4 rounded-2xl transition-all duration-200 hover:scale-[1.02] shadow-xl shadow-indigo-500/30 hover:shadow-2xl hover:shadow-indigo-500/40"
                         >
                             <Sparkles className="w-5 h-5" />
                             Create Habit

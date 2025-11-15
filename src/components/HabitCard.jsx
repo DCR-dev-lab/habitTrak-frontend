@@ -131,7 +131,7 @@ export default function HabitCard({ habit }) {
                 <div className="flex gap-2">
                     <button
                         onClick={markToday}
-                        className="flex-1 flex items-center justify-center gap-2 backdrop-blur-xl bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-xl transition-all duration-200 hover:scale-[1.02] shadow-lg shadow-green-500/20"
+                        className="cursor-pointer flex-1 flex items-center justify-center gap-2 backdrop-blur-xl bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-xl transition-all duration-200 hover:scale-[1.02] shadow-lg shadow-green-500/20"
                     >
                         <CheckCircle className="w-4 h-4" />
                         Complete
@@ -139,7 +139,7 @@ export default function HabitCard({ habit }) {
 
                     <button
                         onClick={unmarkToday}
-                        className="backdrop-blur-xl bg-gray-200/60 hover:bg-gray-300/60 text-gray-700 font-semibold px-4 py-3 rounded-xl transition-all duration-200 hover:scale-[1.02]"
+                        className="cursor-pointer backdrop-blur-xl bg-gray-200/60 hover:bg-gray-300/60 text-gray-700 font-semibold px-4 py-3 rounded-xl transition-all duration-200 hover:scale-[1.02]"
                     >
                         Undo
                     </button>

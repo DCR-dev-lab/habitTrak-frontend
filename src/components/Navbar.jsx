@@ -27,14 +27,8 @@ export default function Navbar() {
                         {/* Logo */}
                         <button
                             onClick={() => handleNavClick('/')}
-                            className="flex items-center gap-2 group"
+                            className="flex items-center gap-2 group cursor-pointer"
                         >
-                            <div className="relative">
-                                <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-xl blur-md opacity-50 group-hover:opacity-70 transition-opacity"></div>
-                                <div className="relative backdrop-blur-xl bg-white/40 border border-white/60 rounded-xl p-2">
-                                    <Sparkles className="w-5 h-5 text-indigo-600" strokeWidth={2.5} />
-                                </div>
-                            </div>
                             <span className="text-xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
                                 HabitTracker
                             </span>
@@ -44,7 +38,7 @@ export default function Navbar() {
                         <div className="hidden md:flex items-center gap-2">
                             <button
                                 onClick={() => handleNavClick('/')}
-                                className="flex items-center gap-2 px-4 py-2 rounded-xl text-gray-700 hover:text-indigo-600 hover:bg-indigo-50/50 transition-all duration-200 font-medium"
+                                className="flex items-center gap-2 px-4 py-2 rounded-xl text-gray-700 hover:text-indigo-600 hover:bg-indigo-50/50 transition-all duration-200 font-medium cursor-pointer"
                             >
                                 <LayoutDashboard className="w-4 h-4" />
                                 Dashboard
@@ -52,7 +46,7 @@ export default function Navbar() {
 
                             <button
                                 onClick={() => handleNavClick('/create-habit')}
-                                className="flex items-center gap-2 px-4 py-2 rounded-xl text-gray-700 hover:text-indigo-600 hover:bg-indigo-50/50 transition-all duration-200 font-medium"
+                                className="flex items-center gap-2 px-4 py-2 rounded-xl text-gray-700 hover:text-indigo-600 hover:bg-indigo-50/50 transition-all duration-200 font-medium cursor-pointer"
                             >
                                 <Plus className="w-4 h-4" />
                                 Add Habit
@@ -60,7 +54,7 @@ export default function Navbar() {
 
                             <button
                                 onClick={() => handleNavClick('/challenges')}
-                                className="flex items-center gap-2 px-4 py-2 rounded-xl text-gray-700 hover:text-indigo-600 hover:bg-indigo-50/50 transition-all duration-200 font-medium"
+                                className="flex items-center gap-2 px-4 py-2 rounded-xl text-gray-700 hover:text-indigo-600 hover:bg-indigo-50/50 transition-all duration-200 font-medium cursor-pointer"
                             >
                                 <Trophy className="w-4 h-4" />
                                 Challenges
@@ -68,7 +62,7 @@ export default function Navbar() {
 
                             <button
                                 onClick={() => handleNavClick('/profile')}
-                                className="flex items-center gap-2 px-4 py-2 rounded-xl text-gray-700 hover:text-indigo-600 hover:bg-indigo-50/50 transition-all duration-200 font-medium"
+                                className="flex items-center gap-2 px-4 py-2 rounded-xl text-gray-700 hover:text-indigo-600 hover:bg-indigo-50/50 transition-all duration-200 font-medium cursor-pointer"
                             >
                                 <User className="w-4 h-4" />
                                 Profile
@@ -77,7 +71,7 @@ export default function Navbar() {
                             {/* Logout Button */}
                             <button
                                 onClick={logout}
-                                className="flex items-center gap-2 ml-2 px-4 py-2 bg-gradient-to-r from-red-500 to-pink-500 text-white rounded-xl hover:from-red-600 hover:to-pink-600 transition-all duration-200 font-medium shadow-lg shadow-red-500/20 hover:shadow-xl hover:shadow-red-500/30"
+                                className="flex items-center gap-2 ml-2 px-4 py-2 bg-gradient-to-r from-red-500 to-pink-500 text-white rounded-xl hover:from-red-600 hover:to-pink-600 transition-all duration-200 font-medium shadow-lg shadow-red-500/20 hover:shadow-xl hover:shadow-red-500/30 cursor-pointer"
                             >
                                 <LogOut className="w-4 h-4" />
                                 Logout
@@ -87,10 +81,10 @@ export default function Navbar() {
                         {/* Mobile Menu Button */}
                         <button
                             onClick={() => setOpen(!open)}
-                            className="md:hidden p-2 rounded-xl hover:bg-gray-100/50 transition-colors"
+                            className="md:hidden p-2 rounded-xl hover:bg-gray-100/50 transition-colors cursor-pointer"
                         >
                             {open ? (
-                                <X className="w-6 h-6 text-gray-700" />
+                                <X className="w-6 h-6 text-gray-700 cursor-pointer" />
                             ) : (
                                 <Menu className="w-6 h-6 text-gray-700" />
                             )}

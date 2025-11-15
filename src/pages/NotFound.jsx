@@ -24,7 +24,7 @@ export default function NotFound() {
 
                 <button
                     onClick={() => navigate("/")}
-                    className="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:scale-[1.02] transition-all"
+                    className="cursor-pointer flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-xl font-semibold shadow-lg hover:scale-[1.02] transition-all"
                 >
                     <ArrowLeft className="w-5 h-5" />
                     Go Home

@@ -144,7 +144,7 @@ export default function HabitDetails() {
                 {/* Back Button */}
                 <button
                     onClick={() => navigate("/")}
-                    className="flex items-center gap-2 text-gray-600 hover:text-indigo-600 mb-6 transition-colors"
+                    className="cursor-pointer flex items-center gap-2 text-gray-600 hover:text-indigo-600 mb-6 transition-colors"
                 >
                     <ArrowLeft className="w-5 h-5" />
                     <span className="font-medium">Back to Dashboard</span>

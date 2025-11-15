@@ -141,7 +141,7 @@ export default function Profile() {
                             <button
                                 onClick={saveReminder}
                                 disabled={isSaving}
-                                className="w-full flex items-center justify-center gap-2 backdrop-blur-xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 disabled:from-gray-400 disabled:to-gray-500 text-white font-semibold py-4 rounded-2xl transition-all duration-200 hover:scale-[1.02] shadow-lg shadow-indigo-500/30 hover:shadow-xl hover:shadow-indigo-500/40 disabled:cursor-not-allowed"
+                                className="cursor-pointer w-full flex items-center justify-center gap-2 backdrop-blur-xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 disabled:from-gray-400 disabled:to-gray-500 text-white font-semibold py-4 rounded-2xl transition-all duration-200 hover:scale-[1.02] shadow-lg shadow-indigo-500/30 hover:shadow-xl hover:shadow-indigo-500/40 disabled:cursor-not-allowed"
                             >
                                 {isSaving ? (
                                     <>
@@ -193,7 +193,7 @@ export default function Profile() {
                         {/* Logout Button */}
                         <button
                             onClick={logout}
-                            className="w-full flex items-center justify-center gap-2 backdrop-blur-xl bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white font-semibold py-4 rounded-2xl transition-all duration-200 hover:scale-[1.02] shadow-lg shadow-red-500/30 hover:shadow-xl hover:shadow-red-500/40"
+                            className="cursor-pointer w-full flex items-center justify-center gap-2 backdrop-blur-xl bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white font-semibold py-4 rounded-2xl transition-all duration-200 hover:scale-[1.02] shadow-lg shadow-red-500/30 hover:shadow-xl hover:shadow-red-500/40"
                         >
                             <LogOut className="w-5 h-5" />
                             Logout
