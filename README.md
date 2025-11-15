@@ -48,6 +48,7 @@ This is the frontend client for HabitTrak, a modern habit tracking application w
 
 ## 📁 Project Structure
 habitTrak-frontend
+```
 │── src/
 │ ├── components/
 │ ├── pages/
@@ -56,7 +57,7 @@ habitTrak-frontend
 │__ main.jsx 
 │── index.html
 └── package.json
-
+```
 
 ## 🚀 Setup Instructions
 
